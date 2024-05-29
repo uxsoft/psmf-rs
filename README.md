@@ -1,7 +1,28 @@
-# Tauri + Leptos
+# PSMF
 
-This template should help get you started developing with Tauri and Leptos.
+## Install Dependencies
 
-## Recommended IDE Setup
+```bash
+rustup target add aarch64-apple-ios x86_64-apple-ios aarch64-apple-ios-sim
+cargo install tauri-cli
+cargo install tauri-cli --version "^2.0.0-alpha"
 
-[VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer).
+```
+
+
+## Starting the development server
+
+```bash
+cargo tauri dev
+```
+or the iOS version on macOS:
+
+```bash
+cargo tauri ios dev
+```
+
+## Build
+
+```bash 
+cargo tauri build???
+```
